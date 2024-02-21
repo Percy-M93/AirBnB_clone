@@ -210,9 +210,9 @@ class TestPlace_to_dict(unittest.TestCase):
 
     def test_to_dict_contains_added_attributes(self):
         pl = Place()
-        pl.middle_name = "ALX"
+        pl.middle_name = "Holberton"
         pl.my_number = 98
-        self.assertEqual("ALX", pl.middle_name)
+        self.assertEqual("Holberton", pl.middle_name)
         self.assertIn("my_number", pl.to_dict())
 
     def test_to_dict_datetime_attributes_are_strs(self):
